@@ -1,38 +1,63 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#basket {
+  position: relative;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#basket span {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  position: absolute;
+  left: -15px;
+  top: -10px;
+  width: 20px;
+  height: 20px;
+  background: rgb(101, 204, 101);
+  border-radius: 50%;
+  color: white;
+  font-size: 12px;
+}
+
+.tableWrap {
+  max-height: 450px;
+  overflow: auto;
+}
+
+thead tr th {
+  position: sticky;
+  top: 0;
+}
+
+.tableWrap::-webkit-scrollbar {
+  display: none;
+}
+
+
+th {
+  padding: 16px;
+  padding-left: 15px;
+  border-bottom: 1px solid #e8e8e8;
+  background: #14532d;
+  text-align: left;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* Basic Demo styling */
+table {
+  width: 100%;
+  font-family: sans-serif;
+}
+table td {
+  padding: 16px;
+}
+tbody > tr {
+  border-bottom: 2px solid #e8e8e8;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+thead {
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.85);
+}
+tbody tr:hover {
+  background: #e6f7ff;
 }
